@@ -1,5 +1,8 @@
 # Donovan Photography
 
+## Project Outline
+[[Donovan Photography] - Project Proposal](https://docs.google.com/document/d/1sJ1ubdvdyQ0_AnGVfpfVCejW1XtvfvD7971GnLlK3ws/edit?usp=sharing)
+
 ## Description
 This is a photography website meant to serve two purposes.  
 >   
@@ -7,8 +10,8 @@ This is a photography website meant to serve two purposes.
 > - It is a platform to distribute photos and images to clients   
 >    
 
-
 - [Donovan Photography](#donovan-photography)
+  - [Project Outline](#project-outline)
   - [Description](#description)
   - [Get started (dev)](#get-started-dev)
   - [Building and running in production mode](#building-and-running-in-production-mode)
