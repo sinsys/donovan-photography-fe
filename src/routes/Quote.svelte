@@ -3,8 +3,8 @@
 </script>
 
 <div class="route">
-  <h2>May I help you find something? You appear lost.</h2>
-  <p>[Unknown Route] Not Found<p></p>
+  <h2>Quote</h2>
+  <p>[Unauthenticated Route] Quote<p>
 </div>
 
 <style lang="scss">
