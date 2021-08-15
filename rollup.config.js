@@ -46,7 +46,7 @@ export default {
 	plugins: [
 		replace({
 			'process.env.NODE_ENV': JSON.stringify('development'),
-			'process.env._APP_ENV_': baseEnv.JSON()
+			'process.env._APP_ENV_': JSON.stringify(baseEnv)
 		}),
 		svelte({
       preprocess: preprocess(),
