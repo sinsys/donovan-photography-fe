@@ -13,9 +13,6 @@ import { cleanEnv, str, url } from 'envalid'
 const baseEnv = dotenv.config()
 
 const env = cleanEnv(baseEnv.parsed, {
-	// RUNTIME
-	NODE_ENV: str({ choices: ['development', 'test', 'production', 'staging']}),
-	
 	// AWS
 	CORE_API_ENDPOINT: url(),
 	
