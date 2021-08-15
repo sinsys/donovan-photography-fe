@@ -1,14 +1,12 @@
 <script lang="ts">
 	import Router from 'svelte-spa-router'
 	import Header from './layout/Header.svelte'
-
-	// Routes
 	import Home from './routes/Home.svelte'
 	import Photos from './routes/Photos.svelte'
 	import SinglePhoto from './routes/SinglePhoto.svelte'
 	import Quote from './routes/Quote.svelte'
 	import About from './routes/About.svelte'
-	import Portfolio from '.routes/Portfolio.svelte'
+	import Portfolio from './routes/Portfolio.svelte'
 	import NotFound from './routes/NotFound.svelte'
 
 	const routes = {
@@ -23,7 +21,7 @@
 		'/photos/:id/:photoId': SinglePhoto,
 
 		// Unknown
-		'*': NotFound,
+		'*': NotFound
 	}
 </script>
 
