@@ -8,9 +8,14 @@ import css from 'rollup-plugin-css-only';
 import preprocess from 'svelte-preprocess';
 import image from '@rollup/plugin-image';
 import replace from '@rollup/plugin-replace';
-import dotenv from 'dotenv'
+import { cleanEnv, url, str } from 'envalid'
 
-const baseEnv = dotenv.config()
+const env = cleanEnv(process.env, {
+	// AWS
+	CORE_API_ENDPOINT: url(),
+	// APP
+	APP_NAME: str()
+})
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -46,7 +51,7 @@ export default {
 	plugins: [
 		replace({
 			'process.env.NODE_ENV': JSON.stringify('development'),
-			'process.env._APP_ENV_': JSON.stringify(baseEnv)
+			'process.env._APP_ENV_': JSON.stringify(env)
 		}),
 		svelte({
       preprocess: preprocess(),
