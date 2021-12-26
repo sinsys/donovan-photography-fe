@@ -28,10 +28,12 @@
 
 <style lang="scss">
   @import '../styles/common.scss';
+  
   a,
   a:visited,
   a:active {
     color: $colorHighlightFocus;
+    text-decoration: none;
   }
 
   .header-nav {
@@ -39,11 +41,28 @@
     justify-content: flex-start;
     list-style: none;
     flex-wrap: wrap;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-evenly;
     margin: 0;
     padding: 0;
 
     li {
-      margin: 0 1rem;
+      margin: 0 2rem;
+      font-size: 2rem;
+      font-variant: small-caps;
+      
+      a {
+        display: inline-block;
+        font-family: $font-work-sans;
+        font-size: 5vh;
+        transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
+
+        &:hover {
+          color: $colorSageGray;
+          transform: scale(1.2) translateX(24px);
+        }
+      }
     }
   }
 </style>

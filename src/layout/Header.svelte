@@ -18,6 +18,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    position: absolute;
+    left: 0;
+    height: 100vh;
     padding-left: 1rem;
   }
 </style>
