@@ -1,6 +1,12 @@
 <script lang="ts">
+	// Utils
 	import Router from 'svelte-spa-router'
+
+	// Components
 	import Header from './layout/Header.svelte'
+	import Background from './layout/Background.svelte'
+
+	// Pages
 	import Home from './routes/Home.svelte'
 	import Photos from './routes/Photos.svelte'
 	import SinglePhoto from './routes/SinglePhoto.svelte'
@@ -26,6 +32,7 @@
 </script>
 
 <main>
+	<Background />
 	<div class="header">
 		<Header />
 	</div>
@@ -38,11 +45,7 @@
 	@import './styles/common.scss';
 
 	main {
-		background: $colorDark;
-		background: url('../images/stock-city.jpg') no-repeat center center fixed;
-		-webkit-background-size: cover;
-		background-size: cover;
-		
+		background: transparent;
 		margin: 0 auto;
 		display: flex;
 		justify-content: flex-start;

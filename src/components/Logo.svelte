@@ -29,6 +29,8 @@
     a,
     a:visited,
     a:active {
+      @include fontKrona;
+      text-decoration: none;
       color: $colorHighlightFocus;
     }
   }
