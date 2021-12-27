@@ -1,3 +1,17 @@
-$font-work-sans: 'Work Sans', sans-serif;
 $font-cardo: 'Cardo', serif;
-$font-open-sans: 'Open Sans', sans-serif;
+$font-dm-sans: 'DM Sans', sans-serif;
+$font-federo: 'Federo', sans-serif;
+$font-krona: 'Krona One', sans-serif;
+
+@mixin fontCardo {
+  font-family: $font-cardo;
+}
+@mixin fontDmSans {
+  font-family: $font-dm-sans;
+}
+@mixin fontFedero {
+  font-family: $font-federo;
+}
+@mixin fontKrona {
+  font-family: $font-krona;
+}

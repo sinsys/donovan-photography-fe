@@ -8,12 +8,9 @@
   }
 
   const routes: RouteInfo[] = [
-    { text: 'Portfolio', path: '/portfolio', auth: false },
-    { text: 'About', path: '/about', auth: false },
-    { text: 'Quote', path: '/quote', auth: false },
-    { text: 'Photos', path: '/photos/123', auth: true },
-    { text: 'SinglePhoto', path: '/photos/123/abc', auth: true },
-    { text: 'I\'m broken', path: '/somebrokenlink', auth: false }
+    { text: 'portfolio', path: '/portfolio', auth: false },
+    { text: 'about', path: '/about', auth: false },
+    { text: 'contact', path: '/contact', auth: false }
   ]
 
 </script>
@@ -32,7 +29,7 @@
   a,
   a:visited,
   a:active {
-    color: $colorHighlightFocus;
+    color: $colorPrimaryAlt;
     text-decoration: none;
   }
 
@@ -50,17 +47,17 @@
     li {
       margin: 0 2rem;
       font-size: 2rem;
-      font-variant: small-caps;
+      text-transform: uppercase;
       
       a {
         display: inline-block;
-        font-family: $font-work-sans;
+        font-family: $font-federo;
         font-size: 5vh;
         transition: transform 0.5s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
-          color: $colorSageGray;
-          transform: scale(1.2) translateX(24px);
+          color: $colorHighlightFocus;
+          transform: scale(1.2) translateX(3rem);
         }
       }
     }
